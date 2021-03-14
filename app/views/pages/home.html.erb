@@ -1,3 +1,9 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 <p class="bg-blue-900 text-white font-bold">Example Tailwind bg-blue-900 text-white font-bold </p>
+
+
+<%= link_to profile_path, class:"" do %>
+  go
+<% end %>
+<%= link_to "Déconnexion", destroy_user_session_path, method: :delete, data: { confirm: "Êtes vous sûr de vouloir vous déconncter" }, class: "btn btn-primary" %>

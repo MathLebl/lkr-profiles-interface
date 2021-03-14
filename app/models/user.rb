@@ -5,9 +5,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  def after_database_authentication
-    @user = self
-    @token = @user.token
-    Auth.call(@user, @token)
-  end
+  # def after_database_authentication
+  #   @user = self
+  #   @token = @user.token
+  #   Auth.call(@user, @token)
+  # end
 end
