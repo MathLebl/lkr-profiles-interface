@@ -1,0 +1,16 @@
+<% if notice %>
+<div class="inline-block border-t-4 border-red-500-500 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded fixed bottom-0 right-0 m-1 z-50" role="alert">
+  <%= notice %>
+  <span class=" px-4 py-3">
+    <a class="inline-block fill-current h-6 w-6 text-red-500" href=""><i class="fas fa-times"></i></a>
+  </span>
+</div>
+<% end %>
+<% if alert %>
+<div class="inline-block border-t-4 border-red-500-500 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded fixed bottom-0 right-0 m-1 z-50" role="alert">
+  <%= alert %>
+  <span class=" px-4 py-3">
+    <a class="inline-block fill-current h-6 w-6 text-red-500" href=""><i class="fas fa-times"></i></a>
+  </span>
+</div>
+<% end %>
