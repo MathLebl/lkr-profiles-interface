@@ -1,9 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<p class="bg-blue-900 text-white font-bold">Example Tailwind bg-blue-900 text-white font-bold </p>
+<div class="p-20 h-screen w-screen">
 
-
-<%= link_to profile_path, class:"" do %>
+<%= link_to profile_path, class:"shadow mx-3 my-4 p-2 bg-green-500 text-center rounded text-white font-bold h-10" do %>
   go
 <% end %>
-<%= link_to "Déconnexion", destroy_user_session_path, method: :delete, data: { confirm: "Êtes vous sûr de vouloir vous déconncter" }, class: "btn btn-primary" %>
+<%= link_to "Déconnexion", destroy_user_session_path, method: :delete, data: { confirm: "Êtes vous sûr de vouloir vous déconncter" }, class: "shadow mx-3 my-4 p-2 bg-green-500 text-center rounded text-white font-bold h-10" %>
+
+</div>
